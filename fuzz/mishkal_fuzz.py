@@ -12,7 +12,7 @@ vocalizer = mishkal.tashkeel.TashkeelClass()
 @atheris.instrument_func
 def TestOneInput(data):
     fdp = atheris.FuzzedDataProvider(data)
-    in_string = fdp.ConsumeUnicode(len(data))
+    in_string = fdp.ConsumeUnicodeNoSurrogates(len(data))
     vocalizer.tashkeel(in_string)
         
         
