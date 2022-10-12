@@ -1,0 +1,6 @@
+project: mishkal
+target: mishkal_fuzz
+
+cmds:
+    - cmd: /mishkal/fuzz/mishkal_fuzz.py
+      libfuzzer: true
